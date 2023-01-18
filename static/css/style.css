@@ -1,0 +1,33 @@
+
+html{
+    font-size: 14px;
+}
+
+body{
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+}
+
+.old_price{
+    font-weight: bold;
+    color: rgb(245, 89, 89);
+}
+
+.new_price{
+    font-weight: bold;
+    color: black;
+}
+
+.card{
+    border-radius: 5%;
+    box-shadow: 0.5px 0.5px gray;
+}
+
+.search-bar{
+    width: 30% !important;
+}
+
+
+

@@ -1,0 +1,55 @@
+{% extends 'shop/layout/main.html' %}
+
+{% block title %}
+
+register | shopmall
+
+{% endblock title %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-12 mt-3">
+            <h2><b>Change Password For {{user.username}}</b></h2>
+            <hr style="border-color:antiquewhite;">
+            {% include 'shop/inc/message.html' %}
+        </div>
+    </div>
+    <section class="py-4 my-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <form action="" method="post">
+                        {% csrf_token %}
+                        <div class="mb-4">
+                            <label for="" class="form-label">Enter Old Password</label>
+                            {{form.old_password}}
+                            
+                        </div>
+                        <div class="mb-4">
+                            <label for="" class="form-label">Enter New Password</label>
+                            {{form.new_password1}}
+                            
+                        </div>
+                        <div class="mb-4">
+                            <label for="" class="form-label">Conform Your Password</label>
+                            {{form.new_password2}}
+                            
+                        </div>
+                        
+
+                        <button type="submit" class="btn btn-primary">Change Password</button>
+                    </form>   
+                    
+                </div>
+                    
+            </div>
+        </div>
+
+    </section>
+
+</div>
+
+
+
+{% endblock content %}
